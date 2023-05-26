@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="#dd30b7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/namaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/box"
+        android:drawableStart="@drawable/search"
+        android:drawablePadding="12dp"
+        android:inputType="text"
+        android:paddingLeft="12dp"
+        android:textColorHint="#B0FF008E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/notif"
+        android:paddingLeft="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/notif"
+        app:layout_constraintBottom_toBottomOf="@+id/namaEditText"
+        app:layout_constraintStart_toEndOf="@+id/namaEditText" />
+
+    <ImageView
+        android:id="@+id/d4"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/notif"
+        app:layout_constraintTop_toBottomOf="@+id/namaEditText"
+        app:srcCompat="@drawable/dress" />
+
+    <ImageView
+        android:id="@+id/d1"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="@+id/namaEditText"
+        app:layout_constraintTop_toBottomOf="@+id/namaEditText"
+        app:srcCompat="@drawable/dress" />
+
+    <ImageView
+        android:id="@+id/d2"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="95dp"
+        app:layout_constraintStart_toStartOf="@+id/namaEditText"
+        app:layout_constraintTop_toBottomOf="@+id/namaEditText"
+        app:srcCompat="@drawable/dress" />
+
+    <ImageView
+        android:id="@+id/d3"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="@+id/notif"
+        app:layout_constraintTop_toBottomOf="@+id/namaEditText"
+        app:srcCompat="@drawable/dress" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dress"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/d1"
+        app:layout_constraintStart_toStartOf="@+id/d1"
+        app:layout_constraintTop_toBottomOf="@+id/d1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gamis"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/d2"
+        app:layout_constraintStart_toStartOf="@+id/d2"
+        app:layout_constraintTop_toBottomOf="@+id/d2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hijab"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/d3"
+        app:layout_constraintStart_toStartOf="@+id/d3"
+        app:layout_constraintTop_toBottomOf="@+id/d3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mukena"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/d4"
+        app:layout_constraintStart_toStartOf="@+id/d4"
+        app:layout_constraintTop_toBottomOf="@+id/d4" />
+
+    <TextView
+        android:id="@+id/box1"
+        android:layout_width="120dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginBottom="-30dp"
+        android:layout_height="60dp"
+        android:text="PROMO: DISCOUNT 10%"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/box2"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/box2"
+        android:layout_width="120dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="-30dp"
+        android:layout_height="60dp"
+        android:text="PROMO: GRATIS ONGKIR"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/box2"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/b1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/thumb"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/b6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/akun"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageButton
+        android:id="@+id/b2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/car"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b1" />
+
+    <ImageButton
+        android:id="@+id/b5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/chat"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b6" />
+
+    <ImageButton
+        android:id="@+id/b4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/wallet"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/b5" />
+
+    <ImageButton
+        android:id="@+id/b3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="14dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/shoping"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/b2" />
+
+    <ImageView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

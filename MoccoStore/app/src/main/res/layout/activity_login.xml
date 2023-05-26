@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dd30b7"
+    android:orientation="horizontal"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+
+    <EditText
+        android:id="@+id/namaEditText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginStart="90dp"
+        android:drawableStart="@drawable/user"
+        android:drawablePadding="18dp"
+        android:hint="@string/username"
+        android:inputType="text"
+        android:textColorHint="#ddd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/background_light"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginStart="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/namaEditText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginStart="90dp"
+        android:drawableStart="@drawable/lock"
+        android:drawablePadding="18dp"
+        android:hint="@string/pass"
+        android:inputType="text"
+        android:textColorHint="#ddd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/background_light"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginStart="90dp"
+        app:layout_constraintBottom_toBottomOf="@+id/pass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginStart="90dp"
+        android:text="Login"
+        android:textColor="#dd30b7"
+        android:backgroundTint="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/pass" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
