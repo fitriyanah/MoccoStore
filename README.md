@@ -1,5 +1,5 @@
 # MoccoStore
-## UAS PEMOGRAMAN MOBILE
+## PEMOGRAMAN MOBILE
 
 | Nama | Kelas |
 |------|-------|
